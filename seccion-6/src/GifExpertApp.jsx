@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AddCategory, GifGrid } from "./components";
 
-const DifExpertApp = () => {
+const GifExpertApp = () => {
 
     const [categories, setCategories] = useState(['Cristiano Ronaldo']);
 
@@ -26,4 +26,4 @@ const DifExpertApp = () => {
   )
 }
 
-export default DifExpertApp
+export default GifExpertApp

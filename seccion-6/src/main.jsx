@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import GifExpertApp from './DifExpertApp.jsx';
+import GifExpertApp from './GifExpertApp.jsx';
 import './styles.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
