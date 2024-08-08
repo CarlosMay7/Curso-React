@@ -3,11 +3,12 @@ export const ToDoItem = ({todo, onDeleteToDo, onToggleToDo}) => {
     <li className="list-group-item d-flex justify-content-between">
         <span 
             onDoubleClick={() => onToggleToDo(todo.id)} 
-            className={`align-self-cener ${todo.done && 'text-decoration-line-through'}`}
+            className={`align-self-center ${todo.done ? 'text-decoration-line-through': ''}`}
+            aria-label="span"
         >
             {todo.description}
         </span>
-        <button onClick={() => onDeleteToDo(todo.id)} className="btn btn-danger">Borrar</button>
+        <button aria-label="button" onClick={() => onDeleteToDo(todo.id)} className="btn btn-danger">Borrar</button>
     </li>
   )
 }
