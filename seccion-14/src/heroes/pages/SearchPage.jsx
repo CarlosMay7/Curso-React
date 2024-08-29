@@ -36,7 +36,7 @@ export const SearchPage = () => {
         <div className="col-5">
           <h4>Searching</h4>
           <hr />
-          <form onSubmit={onSearchSubmit}>
+          <form onSubmit={onSearchSubmit} aria-label="form">
             <input type="text" placeholder="search a hero" className="form-control" name="searchText" value={searchText} onChange={onInputChange} autoComplete="off"/>
           </form>
 
@@ -61,11 +61,11 @@ export const SearchPage = () => {
             </div>
           } */}
 
-            <div className="alert alert-primary" style={{display: showSearch ? 'none' : ''}}>
+            <div className="alert alert-primary" style={{display: showSearch ? '' : 'none'}}>
               Search a hero
             </div>
 
-            <div className="alert alert-danger" style={{display: showError ? 'none' : ''}}>
+            <div aria-label="alert-danger" className="alert alert-danger" style={{display: showError ? '' : 'none'}}>
               No hero with <b>{q}</b>
             </div>
 
